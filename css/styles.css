@@ -1,0 +1,15 @@
+* {border: .5px solid red;}
+
+.row1 {
+  width: 100%;
+  display: flex;
+}
+.row2 {
+  width: 100%;
+  display: flex;
+}
+
+.row3 {
+  width: 100%;
+  display: flex;
+}

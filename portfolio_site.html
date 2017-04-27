@@ -1,55 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Firoz's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Exo:200,300" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-uppercase name">
-          <h1>Firoz Kamdar</h1>
-          <h5>Front-End Muppet</h5>
-        </div>
-        <div class="col-md-6 logo">
-          <img src="image/atom_100x100.svg" class="img-responsive center-block" style="float: right;" alt="logo">
-        </div>
-<hr>
-        <div class="row">
-            <div class="col-md-12 feature">
-              <img src="https://placehold.it/1366x350" class="img-rounded img-responsive center-block" alt="logo">
-              <h4>Featured Work</h4>
-            </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 map">
-            <img src="https://placehold.it/450x300" class="img-rounded img-responsive center-block" alt="a neighborhood map of belltown in seattle, washington">
-            <h6>Map Project</h6>
-          </div>
-          <div class="col-md-4 resume">
-            <img src="https://placehold.it/450x300" class="img-rounded img-responsive center-block" alt="logo">
-            <h6>Project 2</h6>
-          </div>
-          <div class="col-md-4 feedreader">
-            <img src="https://placehold.it/450x300" class="img-rounded img-responsive center-block" alt="logo">
-            <h6>Project 3</h6>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-
-<!--  rebulding everything above this line-->
-
-<!--Bootstrap JavaScript and custom JavaScript must go below jQuery to function!  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+<head>
+	<title>Firoz's Portfolio</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://fonts.googleapis.com/css?family=Exo:200,300" rel="stylesheet"><!--Bootstrap JavaScript and custom JavaScript must go below jQuery to function!  -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript">
+	</script>
+	<script src="js/bootstrap.min.js">
+	</script>
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-uppercase">
+				<h1>Firoz Kamdar</h1>
+				<h5>Front-End Muppet</h5>
+			</div>
+			<div class="col-md-6"><img alt="logo" class="img-responsive" src="image/atom_100x100.svg" style="float: right;"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<hr>
+					<img alt="logo" class="img-rounded img-responsive center-block" src="image/feature.png">
+					<h4>↟ Featured Work</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<img alt="a neighborhood map of belltown in seattle, washington" class="img-rounded img-responsive center-block" data-target="#map" data-toggle="modal" src="image/belltown_450x300.png">
+					<h6>Neighborhood Map ↟</h6>
+				</div>
+				<div class="col-md-4">
+					<img alt="picutre of zoomed in sunflower" class="img-rounded img-responsive center-block" data-target="#resume" data-toggle="modal" src="image/iresume_450x300.png">
+					<h6>Interactive Resume ↟</h6>
+				</div>
+				<div class="col-md-4">
+					<img alt="looking through an old camera at the sky" class="img-rounded img-responsive center-block" data-target="#feed" data-toggle="modal" src="image/feed_450x300.png">
+					<h6>Test Driven Development ↟</h6>
+				</div>
+			</div>
+		</div>
+	</div><!--  MAP MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="map" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="a neighborhood map of belltown in seattle, washington" class="img-responsive" src="image/belltown.png"> I'm looking forward to this project. I need to center the text better here, I'll wait until I get into js though. This is actually map of where I live- a few blocks from the Space Needle in Seattle.
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  MAP MODAL END -->
+	<!--  RESUME MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="resume" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Interactive Resume</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="picutre of zoomed in sunflower" class="img-responsive" src="image/iresume.png"> I couldn't find a good resume image to use here, bleh. Hi student viewer/reviewer, here's some dark humor for you. "My friend gave me his Epi-Pen as he was dying. It seemed very important to him that I have it."
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  RESUME MODAL END -->
+	<!--  FEED MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="feed" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Test Driven Development</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="looking through an old camera at the sky" class="img-responsive" src="image/feed.png"> I couldn't find a good TDD image either, well I found them, but none I liked. Here's another joke: You can never lose a homing pigeon - if your homing pigeon doesn't come back, what you've lost is a pigeon.
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  FEED MODAL END -->
+</body>
 </html>

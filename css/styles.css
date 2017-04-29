@@ -8,70 +8,16 @@ body {
 	margin-right: auto;
 	padding: 25px
 }
-h6 {
+h5 {
 	text-align: center;
 }
-@media only screen and (min-width: 992px) {
-	.name {
-		width: 50%;
-		order: 0;
-	}
-	.logo {
-		width: 50%;
-		order: 1;
-	}
-	.feature {
-		width: 100%;
-		order: 2;
-	}
-	.map {
-		width: 33.3%;
-		order: 3;
-	}
-	.resume {
-		width: 33.3%;
-		order: 4;
-	}
-	.project3 {
-		width: 33.3%;
-		order: 5;
-	}
+.modal-body {
+	padding-bottom: 10px;
 }
-@media only screen and (min-width: 601px) and (max-width: 991px) {
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.name {
-		width: 50%;
-		order: 0;
-	}
-	.logo {
-		width: 50%;
-		order: 1;
-	}
-	.feature {
-		width: 100%;
-		order: 2;
-	}
-	.map {
-		width: 50%;
-		order: 3;
-	}
 
-	.resume {
-		width: 50%;
-		order: 4;
-	}
-	.project3 {
-		width: 100%;
-		order: 5;
-	}
-}
-@media only screen and (max-width: 600px) {
-	.container {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
+@media only screen and (min-width:768) and (max-width: 991) {
+	.tdd {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

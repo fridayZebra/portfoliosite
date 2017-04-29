@@ -18,30 +18,34 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 text-uppercase">
+			<div class="col-md-6 col-xs-6 text-left text-uppercase">
 				<h1>Firoz Kamdar</h1>
-				<h5>Front-End Muppet</h5>
+				<h6>Front-End Muppet</h6>
 			</div>
-			<div class="col-md-6"><img alt="logo" class="img-responsive" src="image/atom_100x100.svg" style="float: right;"></div>
+			<div class="col-md-6 col-xs-6 logo">
+				<div class="logo2"><img alt="logo" class="img-responsive" src="image/atom_100x100.svg" style="float: right"></div>
+			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 					<hr>
-					<img alt="logo" class="img-rounded img-responsive center-block" src="image/feature.png">
+					<img alt="old arcade game" class="img-rounded img-responsive center-block" data-target="#feature" data-toggle="modal" src="image/feature_1366x500.png">
 					<h4>↟ Featured Work</h4>
+					<hr>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6">
 					<img alt="a neighborhood map of belltown in seattle, washington" class="img-rounded img-responsive center-block" data-target="#map" data-toggle="modal" src="image/belltown_450x300.png">
-					<h6>Neighborhood Map ↟</h6>
+					<h5>↟ Neighborhood Map</h5>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6 name">
 					<img alt="picutre of zoomed in sunflower" class="img-rounded img-responsive center-block" data-target="#resume" data-toggle="modal" src="image/iresume_450x300.png">
-					<h6>Interactive Resume ↟</h6>
+					<h5>↟ Interactive Resume</h5>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 col-sm-6 tdd">
+					<!-- if i use col-xs-12 here, the box looks odd between 768 and 991, using the above, the box isn't centered  -->
 					<img alt="looking through an old camera at the sky" class="img-rounded img-responsive center-block" data-target="#feed" data-toggle="modal" src="image/feed_450x300.png">
-					<h6>Test Driven Development ↟</h6>
+					<h5>↟ Test Driven Development</h5>
 				</div>
 			</div>
 		</div>
@@ -53,7 +57,8 @@
 					<h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
 				</div>
 				<div class="modal-body">
-					<img alt="a neighborhood map of belltown in seattle, washington" class="img-responsive" src="image/belltown.png"> I'm looking forward to this project. I need to center the text better here, I'll wait until I get into js though. This is actually map of where I live- a few blocks from the Space Needle in Seattle.
+					<img alt="a neighborhood map of belltown in seattle, washington" class="img-responsive" src="image/belltown.png">
+					<p></p>I'm looking forward to this project. I need to center the text better here, I'll wait until I get into js though. This is actually map of where I live- a few blocks from the Space Needle in Seattle.
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
@@ -69,7 +74,8 @@
 					<h4 class="modal-title" id="myModalLabel">Interactive Resume</h4>
 				</div>
 				<div class="modal-body">
-					<img alt="picutre of zoomed in sunflower" class="img-responsive" src="image/iresume.png"> I couldn't find a good resume image to use here, bleh. Hi student viewer/reviewer, here's some dark humor for you. "My friend gave me his Epi-Pen as he was dying. It seemed very important to him that I have it."
+					<img alt="picutre of zoomed in sunflower" class="img-responsive" src="image/iresume.png">
+					<p></p>I couldn't find a good resume image to use here, bleh. Hi student viewer/reviewer, here's some dark humor for you. "My friend gave me his Epi-Pen as he was dying. It seemed very important to him that I have it."
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
@@ -85,7 +91,8 @@
 					<h4 class="modal-title" id="myModalLabel">Test Driven Development</h4>
 				</div>
 				<div class="modal-body">
-					<img alt="looking through an old camera at the sky" class="img-responsive" src="image/feed.png"> I couldn't find a good TDD image either, well I found them, but none I liked. Here's another joke: You can never lose a homing pigeon - if your homing pigeon doesn't come back, what you've lost is a pigeon.
+					<img alt="looking through an old camera at the sky" class="img-responsive" src="image/feed.png">
+					<p></p>I couldn't find a good TDD image either, well I found them, but none I liked. Here's another joke: You can never lose a homing pigeon - if your homing pigeon doesn't come back, what you've lost is a pigeon.
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
@@ -93,5 +100,22 @@
 			</div>
 		</div>
 	</div><!--  FEED MODAL END -->
+	<!--  FEATURE MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="feature" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Test Driven Development</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="space invaders game screen" class="img-responsive" src="image/feature.png">
+					<p></p>this modal is much smaller than the others. remember to find out why/fix this. maybe something to do with the image.
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  FEATURE MODAL END -->
 </body>
 </html>

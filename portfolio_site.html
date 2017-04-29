@@ -18,17 +18,21 @@
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6 col-xs-6 text-left text-uppercase">
-				<h1>Firoz Kamdar</h1>
-				<h6>Front-End Muppet</h6>
-			</div>
-			<div class="col-md-6 col-xs-6 logo">
-				<div class="logo2"><img alt="logo" class="img-responsive" src="image/atom_100x100.svg" style="float: right"></div>
+			<div class="vertical-align">
+				<div class="col-md-6 col-xs-6 text-left text-uppercase">
+					<h1>Firoz Kamdar</h1>
+					<h6>Front-End Muppet</h6>
+				</div>
+				<div class="col-md-6 col-xs-6">
+					<div class="logo">
+						<div><img alt="logo" class="img-responsive" src="image/atom_100x100.svg"></div>
+					</div>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 col-sm-12 col-xs-12">
 					<hr>
-					<img alt="old arcade game" class="img-rounded img-responsive center-block" data-target="#feature" data-toggle="modal" src="image/feature_1366x500.png">
+					<img alt="old arcade game" class="img-rounded img-responsive center-block" data-target="#feature" data-toggle="modal" src="image/invaders.png">
 					<h4>↟ Featured Work</h4>
 					<hr>
 				</div>
@@ -42,10 +46,11 @@
 					<img alt="picutre of zoomed in sunflower" class="img-rounded img-responsive center-block" data-target="#resume" data-toggle="modal" src="image/iresume_450x300.png">
 					<h5>↟ Interactive Resume</h5>
 				</div>
+				<div class="col-sm-3 hidden-lg"></div>
 				<div class="col-md-4 col-sm-6">
-					<!-- if i use col-xs-12 here, the box looks odd between 768 and 991, using the above, the box isn't centered  -->
 					<img alt="looking through an old camera at the sky" class="img-rounded img-responsive center-block" data-target="#feed" data-toggle="modal" src="image/feed_450x300.png">
 					<h5>↟ Test Driven Development</h5>
+					<div class="col-sm-3 hidden-md hidden-lg"></div>
 				</div>
 			</div>
 		</div>
@@ -108,8 +113,8 @@
 					<h4 class="modal-title" id="myModalLabel">Test Driven Development</h4>
 				</div>
 				<div class="modal-body">
-					<img alt="space invaders game screen" class="img-responsive" src="image/feature.png">
-					<p></p>this modal is much smaller than the others. remember to find out why/fix this. maybe something to do with the image.
+					<img alt="space invaders game screen" class="img-responsive" src="image/invaders.png">
+					<p></p>Feature project information and details here.
 				</div>
 				<div class="modal-footer">
 					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>

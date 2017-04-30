@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Firoz's Portfolio</title>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://fonts.googleapis.com/css?family=Exo:200,300" rel="stylesheet"><!--Bootstrap JavaScript and custom JavaScript must go below jQuery to function!  -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<main class="container">
+		<header class="row">
+			<div class="vertical-align">
+				<div class="col-md-6 col-xs-6 text-left text-uppercase">
+					<h1>Firoz Kamdar</h1>
+					<h6>Front-End Muppet</h6>
+				</div>
+				<div class="col-md-6 col-xs-6">
+					<div class="logo">
+						<div class="logobox"><img alt="logo" class="img-responsive" src="image/atom_100x100.svg"></div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12">
+				<hr>
+				<img alt="old arcade game" class="img-rounded img-responsive center-block" data-target="#feature" data-toggle="modal" src="image/invaders.png">
+				<h4>↟ Featured Work</h4>
+				<hr>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img alt="a neighborhood map of belltown in seattle, washington" class="img-rounded img-responsive center-block" data-target="#map" data-toggle="modal" src="image/belltown_450x300.png">
+				<h5>↟ Neighborhood Map</h5>
+			</div>
+			<div class="col-md-4 col-sm-6">
+				<img alt="picutre of zoomed in sunflower" class="img-rounded img-responsive center-block" data-target="#resume" data-toggle="modal" src="image/iresume_450x300.png">
+				<h5>↟ Interactive Resume</h5>
+			</div>
+			<div class="col-sm-3 hidden-lg"></div>
+			<div class="col-md-4 col-sm-6">
+				<img alt="looking through an old camera at the sky" class="img-rounded img-responsive center-block" data-target="#feed" data-toggle="modal" src="image/feed_450x300.png">
+				<h5>↟ Test Driven Development</h5>
+			</div>
+		</header>
+	</main><!--  MAP MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="map" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Neighborhood Map</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="a neighborhood map of belltown in seattle, washington" class="img-responsive" src="image/belltown.png">
+					<p></p>I'm looking forward to this project. I need to center the text better here, I'll wait until I get into js though. This is actually map of where I live- a few blocks from the Space Needle in Seattle.
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  MAP MODAL END -->
+	<!--  RESUME MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="resume" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Interactive Resume</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="picutre of zoomed in sunflower" class="img-responsive" src="image/iresume.png">
+					<p></p>I couldn't find a good resume image to use here, bleh. Hi student viewer/reviewer, here's some dark humor for you. "My friend gave me his Epi-Pen as he was dying. It seemed very important to him that I have it."
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  RESUME MODAL END -->
+	<!--  FEED MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="feed" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Test Driven Development</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="looking through an old camera at the sky" class="img-responsive" src="image/feed.png">
+					<p></p>I couldn't find a good TDD image either, well I found them, but none I liked. Here's another joke: You can never lose a homing pigeon - if your homing pigeon doesn't come back, what you've lost is a pigeon.
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  FEED MODAL END -->
+	<!--  FEATURE MODAL -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="feature" role="dialog" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Arcade Game Clone</h4>
+				</div>
+				<div class="modal-body">
+					<img alt="space invaders game screen" class="img-responsive" src="image/invaders.png">
+					<p></p>Feature project information and details here.
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+				</div>
+			</div>
+		</div>
+	</div><!--  FEATURE MODAL END -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+	</script>
+	<script src="js/jquery-3.2.1.min.js">
+	</script>
+	<script src="js/bootstrap.min.js">
+	</script>
+</body>
+</html>
